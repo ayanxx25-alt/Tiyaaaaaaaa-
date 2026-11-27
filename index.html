@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff0f5">
+  <title>For Tiya 🌸</title>
+  <style>
+    :root{--pink:#f7b8cb;--deep:#a64d70;--ink:#563746;--cream:#fff9fb;--line:#f2d8e2}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:radial-gradient(circle at 10% 5%,#ffe0eb 0,transparent 32%),radial-gradient(circle at 90% 35%,#fce7f1 0,transparent 30%),var(--cream);color:var(--ink);font-family:Georgia,"Times New Roman",serif}
+    .wrap{width:min(100% - 28px,760px);margin:auto}
+    .hero{min-height:92svh;display:grid;place-items:center;text-align:center;padding:56px 12px;position:relative;overflow:hidden}
+    .hero:before,.hero:after{content:"✿";position:absolute;color:#e9a4bc;opacity:.35;font-size:90px}
+    .hero:before{top:8%;left:5%;transform:rotate(-18deg)}.hero:after{bottom:8%;right:6%;transform:rotate(20deg)}
+    .tag{font:600 11px/1.2 Arial,sans-serif;letter-spacing:3px;text-transform:uppercase;color:var(--deep)}
+    h1{font-size:clamp(48px,13vw,86px);line-height:.98;margin:18px 0 12px;color:#a64d70;font-weight:normal}
+    .subtitle{font-size:18px;line-height:1.6;max-width:460px;margin:0 auto 28px}
+    button{border:0;border-radius:999px;padding:14px 23px;background:#b85e80;color:white;font:600 14px Arial,sans-serif;box-shadow:0 8px 22px #dca1b766;cursor:pointer}
+    button:active{transform:scale(.98)}
+    section{padding:28px 0 55px}
+    .paper{background:#fffdfd;border:1px solid var(--line);border-radius:24px;padding:26px 22px;box-shadow:0 12px 35px #b86c8812}
+    h2{font-size:30px;font-weight:normal;text-align:center;color:#a64d70;margin:0 0 16px}
+    p{font-size:17px;line-height:1.8}
+    .note{font-style:italic;text-align:center;font-size:21px;color:#99516d}
+    .flower-row{font-size:26px;letter-spacing:10px;text-align:center;margin:16px 0}
+    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+    .tile{min-height:118px;border-radius:18px;padding:18px 14px;background:linear-gradient(145deg,#fff,#ffeaf1);border:1px solid #f4d7e2;display:flex;flex-direction:column;justify-content:center;text-align:center}
+    .tile b{font-size:18px;font-weight:normal;color:#a64d70;margin-bottom:7px}
+    .tile span{font:13px/1.5 Arial,sans-serif;color:#765361}
+    .letter{white-space:pre-line}
+    .surprise{margin-top:18px;text-align:center}
+    #secret{display:none;margin-top:18px;padding:18px;border-radius:18px;background:#fff0f5;text-align:center;font-size:19px;line-height:1.7}
+    footer{text-align:center;padding:25px 10px 40px;color:#a16b80;font:12px Arial,sans-serif;letter-spacing:1px}
+    @media(max-width:420px){.grid{grid-template-columns:1fr}.paper{padding:22px 18px}.subtitle{font-size:16px}}
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="tag">a little corner of the internet · just for you</div>
+      <h1>Tiya <span aria-hidden="true">🌸</span></h1>
+      <p class="subtitle">For my favourite person, Betu 👉🏻👈🏿<br>A tiny page, made with a whole lot of affection.</p>
+      <button onclick="document.getElementById('note').scrollIntoView({behavior:'smooth'})">Open your little surprise</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section id="note">
+      <div class="paper">
+        <div class="flower-row" aria-hidden="true">♡ ✿ ♡</div>
+        <h2>A thought for you</h2>
+        <p class="note">“I didn't know what I was looking for till I found her (you).”</p>
+        <p>Somehow, you became a favourite part of my days. Even from miles away, you make ordinary moments feel a little more special. I made this small place on the internet just to remind you that you're appreciated.</p>
+        <div class="flower-row" aria-hidden="true">୨୧ · · · ୨୧</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Little things I adore</h2>
+      <div class="grid">
+        <div class="tile"><b>Your smile</b><span>One of my favourite sights, even on a screen.</span></div>
+        <div class="tile"><b>Your presence</b><span>You make a regular day feel less regular.</span></div>
+        <div class="tile"><b>Our conversations</b><span>Even the random, silly ones.</span></div>
+        <div class="tile"><b>Just you</b><span>No big reason needed. You're simply you.</span></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="paper">
+        <h2>A tiny letter</h2>
+        <p class="letter">Dear Tiya,
+
+I wish distance came with a little “skip” button, but until then, here's a small reminder that you're on my mind.
+
+I hope this page makes you smile. You deserve gentle days, happy surprises, and all the little things that make life lovely.
+
+Take care of yourself, Betu.
+
+— someone who is very glad to have found you ♡</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="paper">
+        <h2>One last thing...</h2>
+        <p style="text-align:center">There's a little message hiding here. Tap when you're ready.</p>
+        <div class="surprise"><button id="reveal" type="button">Tap for a secret</button></div>
+        <div id="secret">If I could send you one thing through this screen, it would be a flower and a reminder: you're special to me. 🌷</div>
+      </div>
+    </section>
+  </main>
+  <footer>MADE WITH ♡ FOR TIYA · A LITTLE PINK CORNER</footer>
+  <script>
+    const reveal = document.getElementById('reveal');
+    const secret = document.getElementById('secret');
+    reveal.addEventListener('click', () => {
+      secret.style.display = 'block';
+      reveal.textContent = 'A little reminder, just for you';
+    });
+  </script>
+</body>
+</html>
